@@ -1,0 +1,246 @@
+#home-main-container {
+  max-width: 45%;
+  min-width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+#posts-section {
+  width: 70%;
+}
+
+#sugested-section {
+  width: 30%;
+  height: 400px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
+#story-container {
+  margin-top: 30px;
+  width: 100%;
+  height: 85px;
+  overflow: auto;
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px 4px 10px 4px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.story-profile-img {
+  width: 60px;
+  height: 60px;
+  border: double 3px transparent;
+  border-radius: 60px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.active-story {
+  border-radius: 60px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #f99b4a, #da2e78);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.story-profile-img:hover {
+  cursor: pointer;
+}
+
+#posts-container {
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+#story-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.autogram-post {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  width: 100%;
+  margin-left: 15px;
+  padding-right: 15px;
+}
+
+.post-profile-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.post-header-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.post-header-info p {
+  margin: unset;
+  padding-right: 3px;
+}
+
+.post-main-img {
+  width: 100%;
+  height: auto;
+}
+
+.post-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.post-icon-bar {
+  padding: 12px 12px 5px 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.post-icon {
+  font-size: 25px;
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.heart-icon:hover {
+  color: #ed4956;
+}
+
+.post-like-count {
+  margin-left: 12px;
+}
+
+.post-bio {
+  margin-left: 12px;
+}
+
+.post-comment-bar {
+  width: 100%;
+}
+
+.post-comment-input {
+  padding: 10px !important;
+  margin: unset !important;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+#home-sticky-section-account {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px 0px 20px 30px;
+}
+
+#home-sticky-section-account div img {
+  width: 75px;
+  height: 75px;
+  border: 3px solid white;
+  border-radius: 75px;
+}
+
+#home-sticky-section-account div p {
+  margin: unset;
+  margin-left: 10px;
+}
+
+#suggestions-text {
+  margin-left: 30px;
+  width: calc(100% - 30px);
+  border-bottom: 2px solid #dbdbdb;
+}
+
+#suggestions-container {
+  margin-left: 30px;
+  width: calc(100% - 30px);
+}
+
+.suggestion {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.suggestion a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.suggestion p {
+  margin: unset;
+  margin-left: 10px;
+}
+
+.suggestion-follow {
+  color: #65b4fd;
+  cursor: pointer;
+}
+
+.loading-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+  #home-main-container {
+    max-width: 60%;
+    min-width: 60%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #home-main-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  #posts-section {
+    width: 100%;
+  }
+  #sugested-section {
+    display: none;
+  }
+}

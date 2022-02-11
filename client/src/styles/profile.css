@@ -1,0 +1,255 @@
+#profile-main-container {
+  max-width: 45%;
+  min-width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#profile-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border: double 5px transparent;
+  border-radius: 140px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.active-story {
+  border-radius: 140px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #f99b4a, #da2e78);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.active-story:hover {
+  cursor: pointer;
+}
+
+#profile-details-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#count-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#count-bar span {
+  flex-grow: 1;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+#profile-bio {
+  margin-top: 30px;
+}
+
+#profile-posts-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+#profile-posts-bar {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#post-grid-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.post-grid-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.post-grid-row-img {
+  width: calc(((100vw * 0.45) * 0.33) - 8px);
+  height: calc(((100vw * 0.45) * 0.33) - 8px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.post-grid-row-img img {
+  height: 100%;
+}
+
+.post-grid-row-img:hover {
+  cursor: pointer;
+}
+
+.autogram-post-profile {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  width: 100%;
+  margin-left: 15px;
+  padding-right: 15px;
+}
+
+.post-profile-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.post-header-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.post-header-info p {
+  margin: unset;
+  padding-right: 3px;
+}
+
+.post-main-img {
+  width: 100%;
+  height: auto;
+}
+
+.post-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.post-icon-bar {
+  padding: 12px 12px 5px 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.post-icon {
+  font-size: 25px;
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.heart-icon:hover {
+  color: #ed4956;
+}
+
+.post-like-count {
+  margin-left: 12px;
+}
+
+.post-bio {
+  margin-left: 12px;
+}
+
+.post-comment-bar {
+  width: 100%;
+}
+
+.post-comment-input {
+  padding: 10px !important;
+  margin: unset !important;
+}
+
+#action-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.profile-update-modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1500px) {
+  #profile-main-container {
+    max-width: 60%;
+    min-width: 60%;
+  }
+  .post-grid-row-img {
+    width: calc(((100vw * 0.6) * 0.33) - 8px);
+    height: calc(((100vw * 0.6) * 0.33) - 8px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #profile-main-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  #posts-section {
+    width: 100%;
+  }
+  #sugested-section {
+    display: none;
+  }
+  .post-grid-row-img {
+    width: calc(((100vw - 40px) * 0.33));
+    height: calc(((100vw - 40px) * 0.33));
+    margin: unset;
+  }
+}
