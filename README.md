@@ -163,7 +163,7 @@ This project requires three tables to be made. Two of whitch must be pre-populat
 }
 ```
 
-### Create AWS role for all recources
+### Create AWS role for all resources
 
 Its important to give permissions to the services being used so they can talk to each other.
 
@@ -391,7 +391,7 @@ You will be greeted with a login page. Because its the first time running the pr
 - Fill out the form
 - Register
 
-Now you can play around with the program. Fell free to edit code and mess around. If you find an issue and or have a new feature dont hesitate to submit a pull request.
+Now you can play around with the program. Feel free to edit code and mess around. If you find an issue and or have a new feature dont hesitate to submit a pull request.
 
 ## Additional Details
 
