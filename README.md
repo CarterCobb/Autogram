@@ -20,7 +20,7 @@ to create a simplified Instagram clone.
 
 ## Project description
 
-Autogram is a simplistic Instagram clone. It features, a login, registration form, posts, 24 hour stories, verified accounts, suggested accounts, an explore page, account following logic, and email notifications. There are features still being added that are templated in the current archetecture. These include but are not limited to, post likes and post comments.
+Autogram is a simplistic Instagram clone. It features, a login, registration form, posts, 24 hour stories, verified accounts, suggested accounts, an explore page, account following logic, and email notifications. There are features still being added that are templated in the current architecture. These include but are not limited to, post likes and post comments.
 
 Please not that the code in this repository is to build serverless functions (FAAS) through AWS and cannot run standalone.
 
@@ -244,28 +244,28 @@ AWS SQS will not deliver emails if you dont allow the `email` lamda to be invoke
 
 - Navigate to the `email` lambda in AWS
 - Select the `Configuration` tab and then select `Permissions`
-- Scroll down to `Resource-based-policy` and click on `Add permissions`
+- Scroll down to `Resource-based policy` and click on `Add permissions`
 - Choose `AWS service` and select `SQS from the dropdown`
 - Set `Statement ID` to `1`
 - Keep the `Principle` the same (`sqs.amazonaws.com`)
 - Set the `Source ARN` to your AWS SQS `.fifo` URL
-- Set the `Action` to `lambda:InvkoeFunction`
+- Set the `Action` to `lambda:InvokeFunction`
 
 ### Edit Lambda files to use your AWS account direct links
 
-Starting from the top most directory open `account.py`.
+Starting from the top most directory open `./account/account.py`.
 
 - On line 431 paste the ARN to the `remove` lambda
 - On line 432 paste the ARN to the AWS role you created earlier
 - On line 455 paste the `.fifo` URL to the AWS SQS queue
 - On line 491 paste the AWS S3 bucket name to the variable
 
-Next is `email_lambda.py`
+Next is `./email/email_lambda.py`
 
 - On line 4 replace the email in `<>` with one of your verified AWS SES emails
 - On line 5 replace the region with your AWS region
 
-Last is `remove.py`
+Last is `./story-remove/remove.py`
 
 - On line 11 put your AWS S3 bucket name
 
