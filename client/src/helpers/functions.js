@@ -4,8 +4,6 @@
  * @param  {Date|Number|String} [nowDate] A Date object, timestamp or string parsable with Date.parse()
  * @param  {Intl.RelativeTimeFormat} [trf] A Intl formater
  * @return {string} Human readable elapsed or remaining time
- * @author github.com/victornpb
- * @see https://stackoverflow.com/a/67338038/938822
  */
 export const prettyDate = (
   date,
