@@ -22,7 +22,7 @@ to create a simplified Instagram clone.
 
 Autogram is a simplistic Instagram clone. It features, a login, registration form, posts, 24 hour stories, verified accounts, suggested accounts, an explore page, account following logic, and email notifications. There are features still being added that are templated in the current architecture. These include but are not limited to, post likes and post comments.
 
-Please not that the code in this repository is to build serverless functions (FAAS) through AWS and cannot run standalone.
+Please note that the code in this repository is to build serverless functions (FAAS) through AWS and cannot run standalone.
 
 ## Requirements to deploy and run
 
